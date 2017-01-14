@@ -1,0 +1,15 @@
+{
+  "name": "eso-data-server",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
