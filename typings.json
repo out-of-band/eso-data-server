@@ -1,12 +1,8 @@
 {
-  "globalDependencies": {
-    "jsonschema": "registry:dt/jsonschema#0.0.0+20160811135847",
-    "knex": "registry:dt/knex#0.0.0+20161009195237",
-    "objection": "file:typings/objection/index.d.ts"
-  },
+  "globalDependencies": {},
   "dependencies": {
-    "bluebird": "registry:npm/bluebird#3.4.1+20160909132857",
     "hapi": "registry:dt/hapi#13.0.0+20161121214052",
+    "nconf": "registry:dt/nconf#0.0.0+20161212190028",
     "sequelize": "registry:npm/sequelize#4.0.0-1+20161101121248"
   }
 }

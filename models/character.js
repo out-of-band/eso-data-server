@@ -38,6 +38,21 @@ export default (sequelize, DataTypes) => {
         'Daggerfall Covenant',
         'Ebonheart Pact'
       ]
+    },
+    platform: {
+      type: DataTypes.ENUM,
+      values: [
+        'PC',
+        'PS4',
+        'XB1'
+      ]
+    },
+    server: {
+      type: DataTypes.ENUM,
+      values: [
+        'EU',
+        'NA'
+      ]
     }
   },
   {

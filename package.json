@@ -12,6 +12,10 @@
     "hapi": "^16.1.0",
     "hapi-sequelize": "^3.0.4",
     "hapi-sequelize-crud": "^2.9.0",
+    "nconf": "^0.8.4",
     "sequelize": "^3.29.0"
+  },
+  "devDependencies": {
+    "sequelize-erd": "^1.0.7"
   }
 }

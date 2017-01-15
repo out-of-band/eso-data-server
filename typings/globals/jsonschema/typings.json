@@ -1,8 +1,0 @@
-{
-  "resolution": "main",
-  "tree": {
-    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/8a2c4d2aceadb8f2545c3464ef447efad428f6ca/jsonschema/jsonschema.d.ts",
-    "raw": "registry:dt/jsonschema#0.0.0+20160811135847",
-    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/8a2c4d2aceadb8f2545c3464ef447efad428f6ca/jsonschema/jsonschema.d.ts"
-  }
-}
