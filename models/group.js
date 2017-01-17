@@ -11,8 +11,9 @@ export default (sequelize, DataTypes) => {
   {
     classMethods: {
       associate: (models) => {
-        // Define many-to-many relationship between Groups and Users
-        // Define many-to-many relationship between 
+        // Define many-to-many relationship between Groups and Characters
+        // Define one-to-many relationships between Groups and Raids
+        Group.hasMany('Raid');
       }
     }
   });

@@ -9,20 +9,22 @@ server.connection({ port: 3000, host: 'localhost' });
 
 const sql = new Sequelize(process.env.DATABASE_URL, opts);
 
-await server.register({
-  register: require('hapi-sequelize'),
-  options: [{
-    name: ['./src/models/**/*.js'],
-    sequelize: sql,
-    sync: true
-  }]
-});
+export default () => {
+  await server.register({
+    register: require('hapi-sequelize'),
+    options: [{
+      name: ['./src/models/**/*.js'],
+      sequelize: sql,
+      sync: true
+    }]
+  });
 
-const db = server.plugins['hapi-sequelize-crud'].db;
-const models = db.sequelize.models;
+  const db = server.plugins['hapi-sequelize-crud'].db;
+  const models = db.sequelize.models;
 
-await server.start((err) => {
-  if (err) {
-    throw err;
-  }
-});
+  await server.start((err) => {
+    if (err) {
+      throw err;
+    }
+  });
+}

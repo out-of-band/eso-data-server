@@ -53,6 +53,21 @@ export default (sequelize, DataTypes) => {
         'EU',
         'NA'
       ]
+    },
+    role: {
+      type: DataTypes.ENUM,
+      values: [
+        'DPS',
+        'Healer',
+        'Tank'
+      ]
+    },
+    spec: {
+      type: DataTypes.ENUM,
+      values: [
+        'Magicka',
+        'Stamina'
+      ]
     }
   },
   {

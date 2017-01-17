@@ -1,7 +1,14 @@
-export default (sequelize, DataTypes) => {
-  return sequelize.define('User', {
+import { Sequelize } from 'sequelize';
+import { DataTypes } from 'sequelize';
+
+/**
+ * @param {Sequelize} sql
+ * @param {DataTypes} dt
+ */
+export default function(sql, dt) {
+  return sql.define('User', {
     id: {
-      type: DataTypes.INTEGER,
+      type: dt.INTEGER,
       primaryKey: true,
       autoIncrement: true
     },
@@ -10,6 +17,9 @@ export default (sequelize, DataTypes) => {
   },
   {
     classMethods: {
+      /**
+       * @param 
+       */
       associate: (models) => {
         models.User.hasMany(models.Character, {
           foreignKey: { name: 'userId' }
